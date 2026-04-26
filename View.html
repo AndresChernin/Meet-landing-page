@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" >
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Single page developer portfolio</title>
+    
+    
+    <link rel="stylesheet" href="styles-for-main-container2.css">
+    
+    <link rel="stylesheet" href="styles-for-uppercomponent2.css">
+    
+    <link rel="stylesheet" href="styles-for-middlecomponent.css">
+    <link href=
+    "https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" 
+    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@400;500;700;800;900&display=swap"
+ rel="stylesheet">
+    
+  </head>
+  <body>
+    
+    <main class="main-container"></main>
+    
+    <script src="https://unpkg.com/supersimpledev/react.js"></script>
+    <script src="https://unpkg.com/supersimpledev/react-dom.js"></script>
+
+    <script src="https://unpkg.com/supersimpledev/babel.js"></script>
+    
+    
+    <script src="UpperComponent2.jsx" type="text/babel"></script>
+    <script src="MiddleComponent.jsx" type="text/babel"></script>
+    <script type="text/babel">
+      
+
+
+       function App(){
+        
+         return(
+         <>
+          <UpperComponent2 
+          logo="./starter-code/assets/logo.svg"
+          participants_left="./starter-code/assets/desktop/image-hero-left.png"
+          participants_right="./starter-code/assets/desktop/image-hero-right.png"
+           />
+           <MiddleComponent
+           img1="./starter-code/assets/desktop/image-man-texting.jpg"
+           img2="./starter-code/assets/desktop/image-men-in-meeting.jpg"
+           img3="./starter-code/assets/desktop/image-woman-in-videocall.jpg"
+           img4="./starter-code/assets/desktop/image-women-videochatting.jpg"
+           />
+          </>
+        )
+       }
+      const container = document.querySelector('.main-container');
+      ReactDOM.createRoot(container).render(<App />);
+    </script>
+  </body>
+</html>
