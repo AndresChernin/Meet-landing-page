@@ -1,4 +1,4 @@
-function MiddleComponent({img1,img2,img3,img4})
+function MiddleComponent2({img1,img2,img3,img4})
 {
     return(
         <article className={`middle-part`}>
