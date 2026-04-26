@@ -1,0 +1,70 @@
+:root{
+    /*colors*/
+    --body-background-color:rgb(246, 250, 250);
+    --color-for-black-h:rgb(52, 51, 51);
+    --color-for-blue-green-h:rgb(75, 159, 142);
+    --color-for-grey-p:rgb(166, 164, 164);
+    --color-for-blue-green-button:rgb(75, 159, 142);
+    --color-for-p-of-blue-green-button:rgba(255, 252, 252, 0.99);
+    --second-color-for-p-blue-green-button:rgb(125, 250, 225);
+    --color-for-violet-button:rgb(187, 14, 240);
+    --color-for-p-of-violet-button:var(--color-for-p-of-blue-green-button);
+    --color-for-download-button:var(var(--color-for-violet-button));
+    --color-for-p-of-download-button:var(--color-for-p-of-blue-green-button);
+    --second-color-for-p-of-downlaod-button:var(var(--second-color-for-p-blue-green-button));
+    --lower-part-background-color: rgb(42, 171, 175);
+    --lower-part-text-color:rgb(177, 253, 234);
+    --color-of-line-and-circle:rgb(224, 221, 221);
+
+    --color-for-h1-of-middle-part:rgb(55, 174, 150);
+   /*padding/radiusvariables*/
+   --button-border-radius:62.438rem;
+   
+   /*text size*/
+   --upper-part-p-size-big: 24px;
+   --upper-part-p-size-middle:18px;
+   --upper-part-p-size-small:12px;
+   --upper-part-h-size-big: 80px;
+   --upper-part-h-size-middle:60px;
+   --upper-part-h-size-small:50px;
+
+   
+   --middle-part-h1-size-big:30px;
+
+   --middle-part-h2-size-big:50px;
+
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100vw;
+  background-color: var(--body-background-color);
+  
+  
+}
+body{
+  padding-top:75px;
+  padding-bottom:175px;
+  font-family: 'Red Hat Display', sans-serif;
+}
+h1,h2,p{
+    margin:0;
+    padding:0;
+}
+button{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--button-border-radius);
+  border:none;
+}
+.main-container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+@media(min-width:768px){
+  body{
+    padding-top:50px;
+  }
+}
