@@ -9,9 +9,9 @@
     --second-color-for-p-blue-green-button:rgb(125, 250, 225);
     --color-for-violet-button:rgb(187, 14, 240);
     --color-for-p-of-violet-button:var(--color-for-p-of-blue-green-button);
-    --color-for-download-button:var(var(--color-for-violet-button));
+    --color-for-download-button:var(--color-for-violet-button);
     --color-for-p-of-download-button:var(--color-for-p-of-blue-green-button);
-    --second-color-for-p-of-downlaod-button:var(var(--second-color-for-p-blue-green-button));
+    --second-color-for-p-of-downlaod-button:var(--second-color-for-p-blue-green-button);
     --lower-part-background-color: rgb(42, 171, 175);
     --lower-part-text-color:rgb(177, 253, 234);
     --color-of-line-and-circle:rgb(224, 221, 221);
