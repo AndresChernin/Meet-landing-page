@@ -1,15 +1,13 @@
-function UpperComponent2({logo,participants_left,participants_right})
+function UpperComponent({logo,participants_left,participants_right})
 {
     return(
     <article className={`upper-part`}>
-      <div className={`logo-part`}>
-        <img src={logo} alt="" className={`logo-settings`}/>
-      </div>
-         <div className={`participants-part`}>
-               <img src={participants_left} alt="" className={`participants-left`}/>
-               <img src={participants_right} alt="" className={`participants-right`}/>
-         
-         </div>
+
+     <img src={logo} alt="" className={`logo-settings`}/>
+     
+        <div className={`participants-part`}>
+         <img src={participants_left} alt="" className={`participants_left`}/>
+         <img src={participants_right} alt="" className={`participants_right`}/>
          <div className={`chat-part`}>
               <h1 className={`chat-part-h-tag`}>Group Chat for Everyone</h1>
               <p className={`chat-part-p-tag`}>Meet makes it easy to connect with others 
@@ -24,12 +22,13 @@ function UpperComponent2({logo,participants_left,participants_right})
                 </button>
               </div>
          </div>
-
-        <div className={`line-circle-container`}>
+         
+        </div>
+    
+         <div className={`line-circle-container`}>
               <div className={`line`}></div>
               <div className={`circle`}><span className={`circle-text`}>01</span></div>
          </div>
-
-     </article>
-       )
+    </article>
+    )
 }

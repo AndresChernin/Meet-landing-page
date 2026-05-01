@@ -1,0 +1,119 @@
+.lower-part{
+    background-color: var(--lower-part-background-color);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    padding-top: clamp(2rem, 12vw, 8rem);
+    padding-bottom: clamp(8rem, 6vw, 16rem);
+    flex-shrink: 0;
+    gap:var(--lower-part-gap);
+    
+}
+.lower-part-h1-text{
+    font-weight: 900;
+    font-size:var(--lower-part-h1-size-big);
+    max-width: 14ch;
+    text-align: center;
+    color:var(--lower-part-text-color);
+    line-height:1;
+    padding:0;
+    margin:0;
+}
+.lower-part-p-text{
+  max-width:36ch;
+  text-align: center;
+  font-size: var(--lower-part-p-size-big);
+  color:var(--lower-part-text-color);
+  line-height: 1.6;
+  font-weight: 500;
+}
+/*.lower-part-download-button{
+  width: 100%;
+
+  max-width: 280px;
+
+  min-height: 80px;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-for-violet-button);
+}*/
+.lower-part-download-button {
+
+  padding: 1rem 3rem;
+
+  min-height: 80px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: var(--color-for-violet-button);
+
+  border: none;
+  border-radius: var(--button-border-radius);
+
+  width: auto;
+}
+.lower-part-download-button-text{
+  color:var(--color-for-p-of-blue-green-button);
+  font-weight: 600;
+  font-size: var(--upper-part-p-size-big);
+ 
+}
+.lower-part-download-button-second-text{
+  padding-left:5px;
+  color:var(--second-color-for-lower-download-button);
+}
+
+@media(min-width:768px){
+  .lower-part-h1-text{
+    font-size: var(--lower-part-h1-size-middle);
+  }
+  .lower-part-p-text{
+    font-size:var(--lower-part-h1-size-middle);
+    font-weight: 400;
+  }
+  /*.lower-part-download-button{
+  min-width: 200px;
+  min-height:55px;
+}*/
+.lower-part-download-button{
+    min-height: 55px;
+    
+  }
+}
+
+@media(min-width:1000px){
+  .lower-part{
+    flex-direction:row;
+    justify-content: space-around;
+    gap:0;
+  }
+  .lower-part-h1-text{
+    font-size: var(--lower-part-h1-size-small);
+    text-align: start;
+  }
+  .lower-part-p-text{
+   font-size:var(--lower-part-p-size-small);
+   text-align: start;
+   font-weight: 400;
+  }
+ /* .lower-part-download-button{
+  min-width: 130px;
+  min-height:45px;
+}*/
+  .lower-part-download-button{
+    min-height: 45px;
+    
+  }
+  .lower-part-download-button-text{
+  font-size: var(--upper-part-p-size-small);
+  
+}
+}
