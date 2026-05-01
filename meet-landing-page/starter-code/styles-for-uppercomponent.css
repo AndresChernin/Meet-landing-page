@@ -3,26 +3,30 @@
     display:flex;
     flex-direction: column;
     align-items: center;
-    
-    gap:var(--upper-part-vertical-gap);
-    padding-bottom: var(--upper-part-padding-bottom);   
-    padding-top: var(--upper-part-padding-top);
+    border:2px dotted red;    
 }
 .logo-settings {
-  
-  width: clamp(190px, 25vw, 280px);
-  
+  width: 225px;
   height: auto;
-  
 }
-.participants-part {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
-  width: 100%;
-  gap: clamp(1rem, 10vw, 6rem);
+/*.big-container{
+  padding:0;
+  margin:0;
   
+}*/
+.participants-part{
+       
+    display:grid;
+    /*grid-template-columns:auto 1fr auto;*/
+    grid-template-columns:1fr 2fr 1fr;
+}
+.participants_left{
+  grid-column: 1/2;
+  justify-self: start;
+}
+.participants_right{
+  grid-column:3/4;
+  justify-self: end;
 }
 .chat-part{
   display:flex;
@@ -30,9 +34,7 @@
   
   justify-content: center;
   align-items: center;
-  width:100%;
-  
-  gap:var(--upper-part-chat-gap);
+  width:100%;  
   
 }
 .chat-part-h-tag{
@@ -60,22 +62,19 @@
   display:flex;
   flex-direction: column;
   align-items: center;
-  gap:var(--upper-part-buttons-gap);
-  
+  border:1px solid blue;
 }
+/*.download-button,.what-button{
+  min-width: 280px;
+  min-height:80px;
+}*/
 .download-button,
 .what-button{
+  width: 100%;
+
+  max-width: 280px;
+
   min-height: 80px;
-
-  padding-inline: 2rem;
-
-  width: auto;
-}
-.download-button {
-  padding-inline: 2.5rem;
-}
-.what-button {
-  padding-inline: 2rem;
 }
 .download-button{
   background-color: var(--color-for-blue-green-button);
@@ -97,13 +96,6 @@
   font-weight: 600;
   font-size: var(--upper-part-p-size-big);
 }
-/*.participants-left{
-  justify-self:start;
-}
-.participants-right{
- justify-self:end;
-}
-*/
 .line-circle-container {
   display: flex;
   flex-direction: column;
@@ -133,76 +125,40 @@
   font-weight: 900;
   
 }
-
-
 @media (min-width: 768px) {
-  /*.logo-settings {
+  .logo-settings {
     width: 150px;
-  }*/
+  }
   .buttons-part{
     flex-direction: row;
   }
+  .download-button,.what-button{
+  min-width: 200px;
+  min-height:55px;
 }
-@media (min-width: 1000px) {
-  
- .upper-part{
-    width:100%;   
-    display:grid;
-    
-    grid-template-columns:
-      minmax(0, 1fr)
-      auto
-      minmax(0, 1fr);
-    overflow:hidden;
-}
-.logo-part{
-  width:100%;
-  padding:0;
-  grid-column:1/4;
-  grid-row:1/2;
-  
-  display:flex;
-  justify-content: center;
-}
-.logo-settings {
-    width: 180px;
-    
-  }
-  .participants-part{
-    display:contents;
-  }
-.participants-left{
-  grid-column: 1/2;
-  grid-row:2/3;
-  justify-self: center;
-}
-.participants-right{
-  grid-column:3/4;
-  grid-row:2/3;
-  justify-self: center;
-}
-  .chat-part{
-  grid-column: 2/3;
-  grid-row:2/3;
-  text-align:center;
-  width:400px;
- }
-.line-circle-container {
-  grid-column:1/4;
-  grid-row:3/4;
+.download-button-text,.what-button-text{
+  font-size: var(--upper-part-p-size-middle);
 }
 
- .download-button-text,.what-button-text{
-  font-size: var(--upper-part-p-size-small);
+
 }
-.download-button,.what-button{
+
+@media (min-width: 1200px) {
+  .logo-settings {
+    width: 80px;
+  }
+}
+@media(min-width:1000px){
+ .chat-part{
+  grid-column: 2/3;
+  grid-row:1/2;
+ }
+ 
+  .download-button,.what-button{
   min-width: 130px;
   min-height:45px;
 }
-.chat-part-p-tag{
-  font-size:var(--upper-part-p-size-small);
-}
-.chat-part-h-tag{
-  font-size:var(--upper-part-h-size-small);
-}
+.download-button-text,.what-button-text{
+  font-size: var(--upper-part-p-size-small);
+} 
 }

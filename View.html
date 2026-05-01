@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meet landing page</title>
+    <title>Single page developer portfolio</title>
     
     
     <link rel="stylesheet" href="styles-for-main-container2.css">
@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="styles-for-uppercomponent2.css">
     
     <link rel="stylesheet" href="styles-for-middlecomponent.css">
+    <link rel="stylesheet" href="styles-for-lowercomponent.css">
+  
     <link href=
     "https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" 
     rel="stylesheet">
@@ -32,7 +34,8 @@
     
     
     <script src="UpperComponent2.jsx" type="text/babel"></script>
-    <script src="MiddleComponent2.jsx" type="text/babel"></script>
+    <script src="MiddleComponent.jsx" type="text/babel"></script>
+    <script src="LowerComponent.jsx" type="text/babel"></script>
     <script type="text/babel">
       
 
@@ -46,12 +49,13 @@
           participants_left="./starter-code/assets/desktop/image-hero-left.png"
           participants_right="./starter-code/assets/desktop/image-hero-right.png"
            />
-           <MiddleComponent2
+           <MiddleComponent
            img1="./starter-code/assets/desktop/image-man-texting.jpg"
            img2="./starter-code/assets/desktop/image-men-in-meeting.jpg"
            img3="./starter-code/assets/desktop/image-woman-in-videocall.jpg"
            img4="./starter-code/assets/desktop/image-women-videochatting.jpg"
            />
+           <LowerComponent footerImage="./starter-code/assets/desktop/image-footer.jpg"/>
           </>
         )
        }
